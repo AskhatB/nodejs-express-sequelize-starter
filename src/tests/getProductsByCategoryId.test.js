@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../../app');
 describe('Post Endpoints', () => {
-  it('should recieve a product', async () => {
+  it('should recieve a product by category id', async () => {
     const res = await request(app)
       .post('/product/by-categoty-id')
       .send({

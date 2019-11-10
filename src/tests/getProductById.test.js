@@ -18,5 +18,6 @@ describe('Post Endpoints', () => {
     expect(res.body).toHaveProperty('category_hierarchy');
     expect(res.body).toHaveProperty('category_name');
     expect(res.body).toHaveProperty('brand');
+    expect(res.body).not.toBeNull();
   });
 });
